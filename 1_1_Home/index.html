@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="../components/navigation/index.js"></script>
+</head>
+
+<body>
+  <aside class="drawer">
+    <div class="drawer__wrapper">
+      <div class="drawer__upper">
+        <ul class="drawer__menu">
+          <li class="drawer__menuItem"><a class="drawer__menuLink">Benefits</a></li>
+          <li class="drawer__menuItem"><a class="drawer__menuLink">Features</a></li>
+          <li class="drawer__menuItem"><a class="drawer__menuLink">Hardware</a></li>
+          <li class="drawer__menuItem"><a class="drawer__menuLink">Pricing</a></li>
+          <li class="drawer__menuItem"><a class="drawer__menuLink">FAQ</a></li>
+          <li class="drawer__menuItem"><a class="drawer__menuLink">Contact Us</a></li>
+        </ul>
+        <div class="drawer__action">
+          <button class="button button_primary">Request a Callback</button>
+        </div>
+      </div>
+      <div class="drawer__lower">
+        <button id="close-navigation-btn" class="button button_secondary button_fullWidth">Close Navigation</button>
+      </div>
+    </div>
+  </aside>
+  <header class="header">
+    <div class="infoBanner heading-8">
+      Save 50% for 12 months - limited time offer. Get started today!
+    </div>
+
+    <nav class="navDesktop">
+      <div class="navDesktop__wrapper">
+        <div class="navDesktop__logo">
+          <img src="../assets/logo.png" alt="" class="navDesktop__logoImg">
+        </div>
+        <div class="navDesktop__menu">
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">Benefits</a></div>
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">Features</a></div>
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">Hardware</a></div>
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">Pricing</a></div>
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">FAQ</a></div>
+          <div class="navDesktop__menuItem heading-4"><a href="" class="navDesktop__menuItemLink">Contact Us</a></div>
+        </div>
+        <div class="navDesktop__action">
+          <button class="button button_ghost">Request a Callback</button>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navMobile">
+      <div class="navMobile__logo">
+        <img class="navMobile__logoImg" src="../assets/logo.png" alt="Logo">
+      </div>
+      <div class="navMobile__menu">
+        <div class="navMobile__menuText heading-3">Menu</div>
+        <div class="navMobile__menuIcon">
+          <img class="navMobile__menuIconImg" src="../assets/icons/bars.png" alt="Hamburger Menu">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="hero">
+      <div class="hero__video">
+        <div class="hero__videoFill">
+          <div class="hero__videoPlaceholder">
+            <img class="hero__videoPlaceholderImg" src="../assets/video.png" />
+          </div>
+          <button class="button button_secondary hero__videoActionButton">
+            <img src="../assets/icons/circle-play.png" alt="" class="hero__videoIcon">
+            Play Video
+          </button>
+        </div>
+      </div>
+      <div class="hero__benefit">
+        <div class="hero__benefitWrapper">
+          <h1 class="hero__benefitTitle heading-1">Attention-catching headline</h1>
+          <ul class="hero__benefitList">
+            <li class="hero__benefitListItem paragraph">Short sentence of the first benefit</li>
+            <li class="hero__benefitListItem paragraph">Medium-length sentence of the second benefit</li>
+            <li class="hero__benefitListItem paragraph">And the third benefit</li>
+          </ul>
+          <div class="hero__benefitActions">
+            <div class="hero__benefitActionsItem">
+              <button class="button button_primary hero__benefitActionsItemBtn">See Benefits</button>
+            </div>
+            <div class="hero__benefitActionsItem">
+              <button class="button button_secondary hero__benefitActionsItemBtn">Features</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__upper">
+        <div class="footer__links">
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">Benefits</a></div>
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">Features</a></div>
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">Hardware</a></div>
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">Pricing</a></div>
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">FAQ</a></div>
+          <div class="footer__linkItem"><a href="" class="link footer__linkItemAnchor">Contact Us</a></div>
+        </div>
+        <div class="footer__subs">
+          <div class="footer__subsDescription heading-4">Drop your phone number and we will get back to you in around 5
+            working days!</div>
+          <form class="footer__subsForm">
+            <input placeholder="Enter your phone number" type="text" class="textfield footer__subsFormInput">
+            <button class="button button_primary button_small footer__subsFormBtn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__lower">
+        <div class="footer__info">
+          <div class="footer__infoCompany heading-7">LibraryScan</div>
+          <div class="footer__infoAddress heading-8">Name of the Road, #08-08 Singapore 12345</div>
+        </div>
+        <div class="footer__social">
+          <a href="" class="footer__socialItem">
+            <img src="../assets/icons/facebook.png" alt="LibraryScan Facebook Page" class="footer__socialItemImg">
+          </a>
+          <a href="" class="footer__socialItem">
+            <img src="../assets/icons/instagram.png" alt="LibraryScan Instagram Page" class="footer__socialItemImg">
+          </a>
+          <a href="" class="footer__socialItem">
+            <img src="../assets/icons/twitter.png" alt="LibraryScan Twitter" class="footer__socialItemImg">
+          </a>
+        </div>
+        <div class="footer__copyright heading-8">2008-2024 © Untitled Pte. Ltd.</div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.hero__video {
+  width: 100%;
+}
+
+.hero__videoFill {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__videoPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__videoPlaceholderImg {
+  position: absolute;
+  height: 100%;
+}
+
+.hero__videoPlaceholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark-blue);
+  opacity: 0.4;
+}
+
+.hero__videoActionButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hero__benefit {
+  background-color: var(--color-pale-blue);
+  padding: 24px 20px 40px;
+}
+
+.hero__benefitList {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__benefitListItem {
+  position: relative;
+  padding-left: 32px;
+}
+
+.hero__benefitListItem + .hero__benefitListItem {
+  margin-top: 8px;
+}
+
+.hero__benefitListItem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  background-image: url('../assets/icons/check-circle-blue.png');
+}
+
+.hero__benefitActions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.hero__benefitActionsItemBtn {
+  width: 147px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .hero__benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+  }
+}

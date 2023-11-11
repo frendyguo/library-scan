@@ -1,0 +1,74 @@
+.container {
+  padding: 24px 20px 0;
+}
+
+.quick-menu {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.faq {
+  margin-top: 60px;
+}
+
+.faq__list {
+  margin-top: 24px;
+}
+
+.faq__item {
+  border-top: 1px solid var(--color-light-blue);
+}
+
+.faq__itemHeading {
+  width: 100%;
+  padding: 24px 46px 24px 20px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq__itemHeading::marker,
+.faq__itemHeading::-webkit-details-marker {
+  display: none;
+  list-style: none;
+}
+
+.faq__itemHeading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../assets/icons/chevron-down.png');
+  transition: transform 0.15s ease-in-out;
+}
+
+.faq__item[open] .faq__itemHeading::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq__itemBody {
+  padding: 0 20px 24px;
+}
+
+.faq__itemBodyLink {
+  margin-top: 12px;
+}
+
+.faq__itemBodyLink a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 60px 0 0;
+  }
+}

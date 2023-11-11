@@ -1,0 +1,143 @@
+.container {
+  padding: 24px 0 0;
+}
+
+.title {
+  padding: 0 20px;
+}
+
+.upper {
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.info {
+  margin-top: 40px;
+}
+
+.info__item + .info__item {
+  margin-top: 24px;
+}
+
+.info__itemLabel {
+  font-weight: 500;
+}
+
+.info__itemValue {
+  margin-top: 4px;
+}
+
+.lower {
+  margin-top: 60px;
+  background-color: var(--color-pale-blue);
+  padding: 40px;
+}
+
+.form__splitter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.label + .form__itemInput {
+  margin-top: 4px;
+}
+
+.label + .form__splitter {
+  margin-top: 4px;
+}
+
+.form__splitter > .form__itemInput {
+  width: calc(50% - 8px);
+}
+
+.form__splitter > .form__itemInput_regionCode {
+  width: 92px;
+}
+
+.form__splitter > .form__itemInput_regionCode + .form__itemInput {
+  width: 100%;
+}
+
+.form__item + .form__item,
+.form__splitter + .form__item {
+  margin-top: 32px;
+}
+
+.form__splitter > .form__item + .form__item {
+  margin-top: 0;
+}
+
+.form__itemInput > .textfield {
+  width: 100%;
+}
+
+.form__item > .regionCodePicker {
+  width: 92px;
+}
+
+.form__item_phone {
+  width: 100%;
+}
+
+.actions {
+  margin-top: 24px;
+}
+
+.captcha {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+  justify-content: space-between;
+}
+
+.captcha__imagery {
+  width: 95px;
+  height: 42px;
+  background-color: grey;
+}
+
+.captcha__inputContainer {
+  width: 100%;
+}
+
+.captcha__input {
+  width: 100%;
+}
+
+.actions__submit {
+  width: 164px;
+  margin-left: auto;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 60px 0 32px;
+  }
+
+  .title,
+  .upper {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .upper {
+    margin-top: 0;
+  }
+
+  .lower {
+    width: 572px;
+    flex: 1 0 auto;
+    margin-top: 0;
+  }
+}

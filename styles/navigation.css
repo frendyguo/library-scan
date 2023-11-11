@@ -1,0 +1,158 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.infoBanner {
+  color: var(--color-white);
+  padding: 12px 20px;
+  background-color: var(--color-blue);  
+  text-align: center;
+}
+
+.drawer {
+  z-index: 10000;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-pale-blue);
+  position: fixed;
+  transform: translateY(-100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.drawer_open {
+  transform: translateY(0);
+}
+
+.drawer__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.drawer__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.drawer__menuItem {
+  width: 100%;
+}
+
+.drawer__action {
+  margin-top: 32px;
+}
+
+.drawer__menuLink {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.drawer__menuItem + .drawer__menuItem {
+  margin-top: 32px;
+}
+
+.navMobile {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.navMobile__logo {
+  cursor: pointer;
+  width: 141px;
+  height: 24px;
+  position: relative;
+}
+
+.navMobile__logoImg {
+  width: 100%;
+}
+
+.navMobile__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.navMobile__menuIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.navDesktop {
+  display: none;
+  background-color: var(--color-white);
+}
+
+.navDesktop__wrapper {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1176px;
+  margin: 0 auto;
+}
+
+.navDesktop__logo {
+  width: 180px;
+  height: 30px;
+}
+
+.navDesktop__logoImg {
+  width: 100%;
+}
+
+.navDesktop__menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navDesktop__menuItemLink {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.main {
+  padding-top: 120px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding-top: 127px;
+  }
+
+  .navMobile {
+    display: none;
+  }
+
+  .navDesktop { 
+    display: block;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

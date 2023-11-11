@@ -1,0 +1,408 @@
+:root {
+  /* Colors */
+  --color-blue: #054BB6;
+  --color-dark-blue: #041C34;
+  --color-black: #333333;
+  --color-gray: #BDC2CB;
+  --color-light-blue: #C4D8FA;
+  --color-pale-blue: #F3F6FF;
+  --color-white: #FFFFFF;
+  --color-green: #007F3B;
+
+  /* Typography */
+  --font-family: 'GraphikTrial', sans-serif;
+
+  /* Desktop font */
+  --font-desktop-heading-1-size: 32px;
+  --font-desktop-heading-1-line-height: 38px;
+  --font-desktop-heading-1-weight: 600;
+
+  --font-desktop-heading-2-size: 27px;
+  --font-desktop-heading-2-line-height: 32px;
+  --font-desktop-heading-2-weight: 500;
+
+  --font-desktop-heading-3-size: 24px;
+  --font-desktop-heading-3-line-height: 28px;
+  --font-desktop-heading-3-weight: 600;
+
+  --font-desktop-heading-4-size: 18px;
+  --font-desktop-heading-4-line-height: 21px;
+  --font-desktop-heading-4-weight: 600;
+
+  --font-desktop-heading-5-size: 15px;
+  --font-desktop-heading-5-line-height: 18px;
+  --font-desktop-heading-5-weight: 400;
+
+  --font-desktop-heading-6-size: 32px;
+  --font-desktop-heading-6-line-height: 38px;
+  --font-desktop-heading-6-weight: 600;
+
+  --font-desktop-heading-7-size: 13px;
+  --font-desktop-heading-7-line-height: 18px;
+  --font-desktop-heading-7-weight: 500;
+
+  --font-desktop-heading-8-size: 13px;
+  --font-desktop-heading-8-line-height: 18px;
+  --font-desktop-heading-8-weight: 400;
+
+  /* Mobile font */
+  --font-mobile-heading-1-size: 24px;
+  --font-mobile-heading-1-line-height: 28px;
+  --font-mobile-heading-1-weight: 600;
+
+  --font-mobile-heading-2-size: 22px;
+  --font-mobile-heading-2-line-height: 24px;
+  --font-mobile-heading-2-weight: 500;
+
+  --font-mobile-heading-3-size: 20px;
+  --font-mobile-heading-3-line-height: 24px;
+  --font-mobile-heading-3-weight: 600;
+
+  --font-mobile-heading-4-size: 18px;
+  --font-mobile-heading-4-line-height: 22px;
+  --font-mobile-heading-4-weight: 600;
+
+  --font-mobile-heading-5-size: 14px;
+  --font-mobile-heading-5-line-height: 18px;
+  --font-mobile-heading-5-weight: 500;
+
+  --font-mobile-heading-6-size: 15px;
+  --font-mobile-heading-6-line-height: 18px;
+  --font-mobile-heading-6-weight: 400;
+
+  --font-mobile-heading-7-size: 13px;
+  --font-mobile-heading-7-line-height: 18px;
+  --font-mobile-heading-7-weight: 500;
+
+  --font-mobile-heading-8-size: 13px;
+  --font-mobile-heading-8-line-height: 18px;
+  --font-mobile-heading-8-weight: 400;
+}
+
+@font-face {
+  font-family: 'GraphikTrial';
+  src: url('./fonts/Graphik-Semibold-Trial.otf') format('opentype'),
+    url('./fonts/Graphik-SemiboldItalic-Trial.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'GraphikTrial';
+  src: url('./fonts/Graphik-Medium-Trial.otf') format('opentype'),
+    url('./fonts/Graphik-MediumItalic-Trial.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GraphikTrial';
+  src: url('./fonts/Graphik-Regular-Trial.otf') format('opentype'),
+    url('./fonts/Graphik-RegularItalic-Trial.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GraphikTrial';
+  src: url('./fonts/Graphik-Light-Trial.otf') format('opentype'),
+    url('./fonts/Graphik-LightItalic-Trial.otf') format('opentype');
+  font-weight: 300;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+* {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+.heading-1 {
+  font-size: var(--font-desktop-heading-1-size);
+  line-height: var(--font-desktop-heading-1-line-height);
+  font-weight: var(--font-desktop-heading-1-weight);
+}
+
+.heading-2 {
+  font-size: var(--font-desktop-heading-2-size);
+  line-height: var(--font-desktop-heading-2-line-height);
+  font-weight: var(--font-desktop-heading-2-weight);
+}
+
+.heading-3 {
+  font-size: var(--font-desktop-heading-3-size);
+  line-height: var(--font-desktop-heading-3-line-height);
+  font-weight: var(--font-desktop-heading-3-weight);
+}
+
+.heading-4 {
+  font-size: var(--font-desktop-heading-4-size);
+  line-height: var(--font-desktop-heading-4-line-height);
+  font-weight: var(--font-desktop-heading-4-weight);
+}
+
+.heading-5 {
+  font-size: var(--font-desktop-heading-5-size);
+  line-height: var(--font-desktop-heading-5-line-height);
+  font-weight: var(--font-desktop-heading-5-weight);
+}
+
+.heading-6 {
+  font-size: var(--font-desktop-heading-6-size);
+  line-height: var(--font-desktop-heading-6-line-height);
+  font-weight: var(--font-desktop-heading-6-weight);
+}
+
+.heading-7 {
+  font-size: var(--font-desktop-heading-7-size);
+  line-height: var(--font-desktop-heading-7-line-height);
+  font-weight: var(--font-desktop-heading-7-weight);
+}
+
+.heading-8 {
+  font-size: var(--font-desktop-heading-8-size);
+  line-height: var(--font-desktop-heading-8-line-height);
+  font-weight: var(--font-desktop-heading-8-weight);
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.link {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.link:visited,
+.link:active {
+  color: var(--color-blue);
+}
+
+.list {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.list__item + .list__item {
+  margin-top: 4px;
+}
+
+.indent {
+  padding-left: 20px;
+  margin-top: 32px;
+}
+
+.indent__wrapper {
+  padding: 20px 0 20px 20px;
+  padding-left: 20px;
+  border-left: 8px solid var(--color-blue);
+}
+
+.indent__list {
+  margin: 12px 0 0;
+  padding: 0 0 0 20px;
+}
+
+.paragraph + .list,
+.paragraph + .indent {
+  margin-top: 12px;
+}
+
+.indent + .paragraph {
+  margin-top: 24px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 13px 16px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.button_small {
+  padding: 7px 16px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.button_fullWidth {
+  width: 100%;
+}
+
+.button_primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.button_secondary {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+.button_ghost {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.textfield {
+  height: 42px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+}
+
+.textarea {
+  width: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  resize: none;
+}
+
+.label + .textfield,
+.label + .textarea {
+  margin-top: 4px;
+}
+
+.textfield::placeholder{
+  color: #8FB2E7;
+}
+
+.textfield::-webkit-input-placeholder {
+  color: #8FB2E7;
+}
+
+/* Mozilla Firefox */
+.textfield::-moz-placeholder {
+  color: #8FB2E7;
+}
+
+/* Internet Explorer */
+.textfield::-ms-input-placeholder {
+  color: #8FB2E7;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.radio__input {
+  width: 20px;
+  height: 20px;
+}
+
+.radio__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 6px;
+}
+
+.radio + .radio {
+  margin-top: 8px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.checkbox__input {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 3px;
+}
+
+.checkbox + .checkbox {
+  margin-top: 8px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .heading-1 {
+    font-size: var(--font-mobile-heading-1-size);
+    line-height: var(--font-mobile-heading-1-line-height);
+    font-weight: var(--font-mobile-heading-1-weight);
+  }
+
+  .heading-2 {
+    font-size: var(--font-mobile-heading-2-size);
+    line-height: var(--font-mobile-heading-2-line-height);
+    font-weight: var(--font-mobile-heading-2-weight);
+  }
+
+  .heading-3 {
+    font-size: var(--font-mobile-heading-3-size);
+    line-height: var(--font-mobile-heading-3-line-height);
+    font-weight: var(--font-mobile-heading-3-weight);
+  }
+
+  .heading-4 {
+    font-size: var(--font-mobile-heading-4-size);
+    line-height: var(--font-mobile-heading-4-line-height);
+    font-weight: var(--font-mobile-heading-4-weight);
+  }
+
+  .heading-5 {
+    font-size: var(--font-mobile-heading-5-size);
+    line-height: var(--font-mobile-heading-5-line-height);
+    font-weight: var(--font-mobile-heading-5-weight);
+  }
+
+  .heading-6 {
+    font-size: var(--font-mobile-heading-6-size);
+    line-height: var(--font-mobile-heading-6-line-height);
+    font-weight: var(--font-mobile-heading-6-weight);
+  }
+
+  .heading-7 {
+    font-size: var(--font-mobile-heading-7-size);
+    line-height: var(--font-mobile-heading-7-line-height);
+    font-weight: var(--font-mobile-heading-7-weight);
+  }
+
+  .heading-8 {
+    font-size: var(--font-mobile-heading-8-size);
+    line-height: var(--font-mobile-heading-8-line-height);
+    font-weight: var(--font-mobile-heading-8-weight);
+  }
+}

@@ -1,0 +1,100 @@
+.footer {
+  padding: 40px 20px 100px;
+  margin-top: 40px;
+}
+
+.footer__linkItem + .footer__linkItem {
+  margin-top: 16px;
+}
+
+.footer__subs {
+  margin-top: 48px;
+}
+
+.footer__subsForm {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.footer__subsFormInput {
+  width: 100%;
+  max-width: 209px;
+  height: 42px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0 12px;
+  border: none;
+  border: 1px solid var(--color-blue);
+  outline: none;
+}
+
+.footer__subsFormBtn {
+  width: 100px;
+}
+
+.footer__lower {
+  margin-top: 48px;
+}
+
+.footer__info {
+  max-width: 163px;
+}
+
+.footer__infoAddress {
+  margin-top: 2px;
+}
+
+.footer__social {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__socialItem {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.footer__copyright {
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer__links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .footer__linkItem + .footer__linkItem {
+    margin-top: 0;
+  }
+
+  .footer__subs {
+    max-width: 680px;
+  }
+
+  .footer__subsForm {
+    justify-content: flex-end;
+  }
+
+  .footer__lower {
+    margin-top: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 28px;
+  }
+}
